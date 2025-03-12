@@ -1,0 +1,134 @@
+<!DOCTYPE web-app PUBLIC
+ "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
+ "http://java.sun.com/dtd/web-app_2_3.dtd">
+<web-app>
+  <display-name>Archetype Created Web Application</display-name>
+
+  <servlet>
+    <servlet-name>CustomerController</servlet-name>
+    <display-name>CustomerController</display-name>
+    <description></description>
+    <servlet-class>CustomerController</servlet-class>
+  </servlet>
+
+  <servlet>
+    <servlet-name>CustomerLoginController</servlet-name>
+    <display-name>CustomerLoginController</display-name>
+     <description></description>
+    <servlet-class>CustomerLoginController</servlet-class>
+  </servlet>
+
+  <servlet>
+    <servlet-name>DriverController1</servlet-name>
+    <display-name>DriverController1</display-name>
+    <description></description>
+    <servlet-class>DriverController1</servlet-class>
+  </servlet>
+
+  <servlet>
+    <servlet-name>DriverLoginController</servlet-name>
+    <display-name>DriverLoginController</display-name>
+    <description></description>
+    <servlet-class>DriverLoginController</servlet-class>
+  </servlet>
+
+<servlet>
+    <servlet-name>DriverUpdateController</servlet-name>
+    <display-name>DriverUpdateController</display-name>
+    <description></description>
+    <servlet-class>DriverUpdateController</servlet-class>
+  </servlet>
+
+
+  <servlet>
+    <servlet-name>contactController</servlet-name>
+    <display-name>contactController</display-name>
+    <description></description>
+    <servlet-class>contactController</servlet-class>
+  </servlet>
+  
+  <servlet>
+  	<servlet-name>AddVehicleController</servlet-name>
+  	<display-name>AddVehicleController</display-name>
+  	<description></description>
+  	<servlet-class>AddVehicleController</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>AdminLoginController2</servlet-name>
+  	<display-name>AdminLoginController2</display-name>
+  	<description></description>
+  	<servlet-class>AdminLoginController2</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>BookingController</servlet-name>
+  	<display-name>BookingController</display-name>
+  	<description></description>
+  	<servlet-class>BookingController</servlet-class>
+  </servlet>
+  
+
+  <servlet-mapping>
+    <servlet-name>CustomerController</servlet-name>
+    <url-pattern>/jsp/customerReg</url-pattern>
+  </servlet-mapping>
+
+  <servlet-mapping>
+    <servlet-name>CustomerLoginController</servlet-name>
+    <url-pattern>/jsp/customerLogin</url-pattern>
+  </servlet-mapping>
+
+  <servlet-mapping>
+    <servlet-name>DriverController1</servlet-name>
+    <url-pattern>/jsp/driver/driverReg</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>DriverLoginController</servlet-name>
+    <url-pattern>/jsp/driver/driverLogin</url-pattern>
+  </servlet-mapping>
+  
+    <servlet-mapping>
+    <servlet-name>DriverUpdateController</servlet-name>
+    <url-pattern>/updateDriver</url-pattern>
+  </servlet-mapping>
+  
+  <servlet-mapping>
+    <servlet-name>AdminLoginController2</servlet-name>
+    <url-pattern>/jsp/admin/adminLogin</url-pattern>
+  </servlet-mapping>
+  
+  <servlet-mapping>
+    <servlet-name>BookingController</servlet-name>
+    <url-pattern>/jsp/BookingController</url-pattern>
+  </servlet-mapping>
+ 
+  
+ <servlet-mapping>
+    <servlet-name>contactController</servlet-name>
+    <url-pattern>/contact</url-pattern>
+  </servlet-mapping>
+
+  <servlet-mapping>
+    <servlet-name>AddVehicleController</servlet-name>
+    <url-pattern>/jsp/driver/AddVehicle</url-pattern>
+</servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>AddVehicleController</servlet-name>
+  	<url-pattern>/AddVehicleController</url-pattern>
+  </servlet-mapping>
+
+  <servlet-mapping>
+  	<servlet-name>AdminLoginController2</servlet-name>
+  	<url-pattern>/AdminLoginController2</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>BookingController</servlet-name>
+  	<url-pattern>/BookingController</url-pattern>
+  </servlet-mapping>
+  
+    <servlet-mapping>
+  	<servlet-name>DriverUpdateController</servlet-name>
+  	<url-pattern>/DriverUpdateController</url-pattern>
+  </servlet-mapping>
+
+
+</web-app>     
