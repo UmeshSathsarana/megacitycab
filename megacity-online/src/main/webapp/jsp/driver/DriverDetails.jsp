@@ -56,7 +56,7 @@
 <p>Email: <%= driver.getEmail() %></p>
 <p>NIC: <%= driver.getNicNumber() %></p>
 
-<a href="driverEdit.jsp?drvId=<%= driver.getDrvId() %>">Edit Profile</a>
+<a href="driverEdit1.jsp?drvId=<%= driver.getDrvId() %>">Edit Profile</a>
 
 </body>
 </html>

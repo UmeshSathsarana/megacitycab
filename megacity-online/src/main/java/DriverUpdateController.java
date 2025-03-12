@@ -12,7 +12,7 @@ import com.example.service.DriverService;
 import java.nio.file.Paths;
 import java.io.File;
 
-@WebServlet("/updateDriver")
+@WebServlet("/jsp/driver/updateDriver")
 @MultipartConfig(fileSizeThreshold = 1024 * 1024 * 2, // 2MB
                  maxFileSize = 1024 * 1024 * 10,      // 10MB
                  maxRequestSize = 1024 * 1024 * 50)   // 50MB
@@ -51,11 +51,11 @@ public class DriverUpdateController extends HttpServlet {
             if (isUpdated) {
                 response.sendRedirect("viewDetails.jsp?drvId=" + drvId + "&success=Profile updated successfully");
             } else {
-                response.sendRedirect("driverEdit.jsp?drvId=" + drvId + "&error=Failed to update profile");
+                response.sendRedirect("driverEdit1.jsp?drvId=" + drvId + "&error=Failed to update profile");
             }
         } catch (Exception e) {
             e.printStackTrace();
-            response.sendRedirect("driverEdit.jsp?error=An error occurred while updating profile");
+            response.sendRedirect("driverEdit1.jsp?error=An error occurred while updating profile");
         }
     }
 }

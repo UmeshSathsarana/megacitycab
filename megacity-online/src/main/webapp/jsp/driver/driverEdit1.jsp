@@ -9,7 +9,7 @@
     String drvIdParam = request.getParameter("drvId");
     
     if (drvIdParam == null || drvIdParam.isEmpty()) {
-        response.sendRedirect("errorPage.jsp?error=Invalid Driver ID");
+   	 response.getWriter().write("Registration Successful");
         return;
     }
 
@@ -18,7 +18,7 @@
     DriverModel driver = service.getDriverDetails(drvId);
 
     if (driver == null) {
-        response.sendRedirect("errorPage.jsp?error=Driver not found");
+   	 response.getWriter().write("jhjgjhjgjhjgjh");
         return;
     }
 %>
@@ -99,6 +99,10 @@
 
     <label for="licNumber">License Number:</label>
     <input type="text" id="licNumber" name="licNumber" value="<%= driver.getLicNumber() %>" required>
+    
+    
+    <label for="ststus">status:</label>
+    <input type="text" id="status" name="status" value="<%= driver.getStatus() %>" required>
 
    <label for="image">Profile Image:</label>
     <input type="file" name="image">
